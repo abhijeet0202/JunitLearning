@@ -19,7 +19,7 @@ public class TestBankExpectationBehaviour {
 			}	
 		};
 		String name = myBank.processAccount(10);
-		assertEquals("Accoont number is 10 and name is Abhijeet", "Abhijeet", name);
+		assertEquals("Account number is 10 and name is Abhijeet", "Abhijeet", name);
 	}
 
 }

@@ -1,9 +1,10 @@
 package abhijeet.StaticMethod;
-import static org.junit.Assert.*;
-import mockit.Mocked;
-import mockit.NonStrictExpectations;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
+
+import mockit.Expectations;
+import mockit.Mocked;
 
 
 public class MockingStaticMethodByExpectation {
@@ -11,7 +12,7 @@ public class MockingStaticMethodByExpectation {
 	@Test
 	public void Mock_StaticMathod_Expectation() {
 		Employee emp = new Employee();
-		new NonStrictExpectations() {			
+		new Expectations() {			
 			{
 				Account.getMoney(); 
 				returns("DUPLICATE");
