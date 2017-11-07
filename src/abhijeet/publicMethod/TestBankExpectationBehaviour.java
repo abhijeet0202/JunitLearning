@@ -15,7 +15,7 @@ public class TestBankExpectationBehaviour {
 		new Expectations() {			
 			{
 				myDBManager.accountHolderName(anyInt);
-				returns("Abhijeet");
+				returns("Abhijeet", any, null);
 			}	
 		};
 		String name = myBank.processAccount(10);

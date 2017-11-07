@@ -17,7 +17,7 @@ public class MockingPrivateMethodsByExpectations {
 		new Expectations(pri) {
 			{
 				Deencapsulation.invoke(pri, "CallingPrivateMethod");
-				returns("Private");
+				returns("Private", any, null);
 			}
 		};
 		String name = pri.CallingPublicMethod();

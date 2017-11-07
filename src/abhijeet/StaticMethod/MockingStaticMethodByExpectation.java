@@ -15,7 +15,7 @@ public class MockingStaticMethodByExpectation {
 		new Expectations() {			
 			{
 				Account.getMoney(); 
-				returns("DUPLICATE");
+				returns("DUPLICATE", any, null);
 			}			
 		};		
 		String status = emp.makePayment();

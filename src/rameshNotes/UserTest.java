@@ -44,7 +44,7 @@ public class UserTest {
 
 	@Test
 	public void testStoreData_UserExists_IncorrectAge() {
-		new NonStrictExpectations() {{
+		new StrictExpectations() {{
 			dbH.IsUserExists(anyString); result = true; maxTimes=1;
 			dbH.GetAge(); result = 25;
 		}};
@@ -59,7 +59,7 @@ public class UserTest {
 	
 	@Test
 	public void testStoreData_UserNotExists_DbUpdateSuccess() {
-		new NonStrictExpectations() {{
+		new StrictExpectations() {{
 			dbH.IsUserExists("Ramesh"); returns(false, true); times=2;
 		}};
 		
@@ -74,7 +74,7 @@ public class UserTest {
 	
 	@Test
 	public void testStoreData_UserNotExists_DbUpdateFailure() {
-		new NonStrictExpectations() {{
+		new StrictExpectations() {{
 			dbH.IsUserExists("Ramesh"); returns(false, false); minTimes=1;
 		}};
 		
