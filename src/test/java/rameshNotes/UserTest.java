@@ -8,9 +8,9 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import main.java.DbHelper;
-import main.java.User;
 import mockit.*;
+import rameshNotes.DbHelper;
+import rameshNotes.User;
 
 public class UserTest {
 	@Mocked DbHelper dbH;

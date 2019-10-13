@@ -1,4 +1,4 @@
-package main.java;
+package rameshNotes;
 
 public class User {
 	private DbHelper dbHelper = null;

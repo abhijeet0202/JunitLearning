@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import main.java.DbHelper;
+import rameshNotes.DbHelper;
 
 
 public class DbHelperTest {
