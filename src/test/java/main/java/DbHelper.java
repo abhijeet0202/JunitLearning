@@ -1,4 +1,4 @@
-package rameshNotes;
+package main.java;
 
 public class DbHelper {
 
